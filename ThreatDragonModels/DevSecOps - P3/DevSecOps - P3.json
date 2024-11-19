@@ -21,15 +21,15 @@
           {
             "position": {
               "x": 151.99999999999824,
-              "y": -391.9999999999986
+              "y": -387
             },
             "size": {
               "width": 620,
               "height": 620
             },
             "shape": "trust-boundary-box",
-            "id": "ba8b2041-4525-4ac1-909d-cec967ff6f91",
             "zIndex": -1,
+            "id": "ba8b2041-4525-4ac1-909d-cec967ff6f91",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -87,8 +87,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -116,10 +116,25 @@
                   "new": false,
                   "number": 101,
                   "score": "28"
+                },
+                {
+                  "id": "001dedbd-a05b-4510-82b7-6b8023cb451f",
+                  "title": "Reverse Shell",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Creation of reverse shell through usage of the loggin system.\nD10/R10/E10/A10",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 112,
+                  "score": "40"
                 }
               ],
-              "hasOpenThreats": false,
-              "isWebApplication": null
+              "hasOpenThreats": true,
+              "isWebApplication": null,
+              "handlesCardPayment": null,
+              "handlesGoodsOrServices": null
             }
           },
           {
@@ -171,7 +186,10 @@
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
-              "isPublicNetwork": false
+              "isPublicNetwork": false,
+              "isWebApplication": null,
+              "handlesCardPayment": null,
+              "handlesGoodsOrServices": null
             }
           },
           {
@@ -205,7 +223,10 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "threats": [],
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "isWebApplication": null,
+              "handlesCardPayment": null,
+              "handlesGoodsOrServices": null
             }
           },
           {
@@ -288,7 +309,7 @@
             "data": {
               "name": "Telefon-Routing-\nInterface",
               "description": "",
-              "type": "tm.Flow",
+              "type": "tm.Process",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -351,62 +372,6 @@
               "isEncrypted": false,
               "isPublicNetwork": false
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Erwarteter OTT",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "2503a360-01b6-4464-b35f-42c6fb583348",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "1. Auth Challenge"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "target": {
-              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
-            },
-            "vertices": [
-              {
-                "x": 440,
-                "y": -10
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1096,6 +1061,9 @@
               "threats": []
             },
             "id": "381e7865-4684-4e45-ab86-8e78cf21d7b0",
+            "labels": [
+              "Log Data gesendet"
+            ],
             "source": {
               "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
             },
@@ -1107,9 +1075,6 @@
                 "x": 300,
                 "y": -70
               }
-            ],
-            "labels": [
-              "Log Data gesendet"
             ]
           },
           {
@@ -1144,6 +1109,9 @@
               "threats": []
             },
             "id": "15d70aca-bf31-4844-8d34-d18afd028242",
+            "labels": [
+              "Wöchentlicher Report, verschlüsselt und signiert"
+            ],
             "source": {
               "cell": "8dab72fd-55be-4301-94af-b85ffeeafcab"
             },
@@ -1155,9 +1123,6 @@
                 "x": 266,
                 "y": -290
               }
-            ],
-            "labels": [
-              "Wöchentlicher Report, verschlüsselt und signiert"
             ]
           },
           {
@@ -1192,16 +1157,16 @@
               "threats": []
             },
             "id": "c57c4301-b727-4473-8708-cc6998aa3958",
+            "labels": [
+              "Monatlicher Report"
+            ],
             "source": {
               "cell": "d4df6162-e99c-4a6f-b348-75186d42982b"
             },
             "target": {
               "cell": "d8f6021e-35e9-4644-b797-86aa8de4f16c"
             },
-            "vertices": [],
-            "labels": [
-              "Monatlicher Report"
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1318,6 +1283,62 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Erwarteter OTT",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "isTrustBoundary": false
+            },
+            "id": "2503a360-01b6-4464-b35f-42c6fb583348",
+            "labels": [
+              {
+                "position": 0.5,
+                "attrs": {
+                  "label": {
+                    "text": "1. Auth Challenge"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "target": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": -10
+              }
+            ]
+          },
+          {
             "position": {
               "x": 470,
               "y": -107
@@ -1394,7 +1415,8 @@
               "isEncrypted": false,
               "isSigned": false,
               "hasOpenThreats": false,
-              "threats": []
+              "threats": [],
+              "storesInventory": null
             }
           },
           {
@@ -1454,27 +1476,41 @@
                 "text": "SIEM - System"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
-            "id": "8dab72fd-55be-4301-94af-b85ffeeafcab",
             "zIndex": 14,
+            "id": "8dab72fd-55be-4301-94af-b85ffeeafcab",
             "data": {
               "type": "tm.Process",
               "name": "SIEM - System",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f32b105f-d40b-4ae3-8564-962bf69e7b09",
+                  "title": "Changing Log Information",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "supression of certain logging entries through sql injection\nD5/R8/E9/A2",
+                  "mitigation": "verify user input and usage of prepared statements",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 110,
+                  "score": "24"
+                }
+              ]
             }
           },
           {
@@ -1498,8 +1534,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "d4df6162-e99c-4a6f-b348-75186d42982b",
             "zIndex": 16,
+            "id": "d4df6162-e99c-4a6f-b348-75186d42982b",
             "data": {
               "type": "tm.Actor",
               "name": "Mnanagement",
@@ -1539,27 +1575,41 @@
                 "text": "Bedrohungsmodell"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
-            "id": "d8f6021e-35e9-4644-b797-86aa8de4f16c",
             "zIndex": 17,
+            "id": "d8f6021e-35e9-4644-b797-86aa8de4f16c",
             "data": {
               "type": "tm.Process",
               "name": "Bedrohungsmodell",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "736dbd82-f5b5-4709-80ae-a427ba24c72d",
+                  "title": "leakage of the monthly report",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Malicious Insider leaks monthly report\nD10/R1/E10/A4",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 113,
+                  "score": ""
+                }
+              ]
             }
           }
         ],
@@ -1572,7 +1622,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 109
+    "threatTop": 113
   },
   "version": "2.1.1"
 }

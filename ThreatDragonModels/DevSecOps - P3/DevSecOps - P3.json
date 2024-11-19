@@ -1347,8 +1347,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1368,7 +1367,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
@@ -1377,11 +1376,11 @@
                 {
                   "id": "6fab69c7-ce8d-4101-bafa-8ec88c6d5f6c",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Tampering",
-                  "description": "Attacker brute forces the Credentials.\nD2/R6/E1/A5\n\nMITRE Attack : ID: T1110 Brute force",
-                  "mitigation": "Limit Login Attempts after a certain amount of failed Login tries.",
+                  "description": "Attacker brute forces the Credentials.\nD2/R6/E1/A5\n\nMITRE Attack : ID: T1110 Brute force\nCAPEC-49: Password Brute Forcing",
+                  "mitigation": "Limit Login Attempts after a certain amount of failed Login tries.\n\nMITRE D3fend : D3-AL Account locking\n\ninfinitely delays brute force attacks because account will be locked after a couple of tries.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 107,

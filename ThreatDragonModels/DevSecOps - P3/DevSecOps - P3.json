@@ -277,7 +277,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Other Mobile\nPhone OTT\nService"
+                "text": "AllSecure Mobile\nPhone OTT\nService"
               },
               "body": {
                 "stroke": "#333333",
@@ -290,7 +290,7 @@
             "zIndex": 9,
             "id": "166a4763-016a-486b-92df-a86adc8bab82",
             "data": {
-              "name": "Other Mobile\nPhone OTT\nService",
+              "name": "AllSecure Mobile\nPhone OTT\nService",
               "description": "",
               "type": "tm.Process",
               "isTrustBoundary": false,
@@ -787,6 +787,10 @@
               "y": 138
             },
             "vertices": [
+              {
+                "x": 300,
+                "y": 210
+              },
               {
                 "x": 620,
                 "y": 210

@@ -801,8 +801,8 @@
                 "y": -204
               },
               {
-                "x": 340,
-                "y": -174
+                "x": 160,
+                "y": -250
               },
               {
                 "x": 243,
@@ -1187,6 +1187,102 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Log Data gesendet",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "381e7865-4684-4e45-ab86-8e78cf21d7b0",
+            "source": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "target": {
+              "cell": "8dab72fd-55be-4301-94af-b85ffeeafcab"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": -70
+              }
+            ],
+            "labels": [
+              "Log Data gesendet"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wöchentlicher Report, verschlüsselt und signiert",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "15d70aca-bf31-4844-8d34-d18afd028242",
+            "source": {
+              "cell": "8dab72fd-55be-4301-94af-b85ffeeafcab"
+            },
+            "target": {
+              "cell": "d4df6162-e99c-4a6f-b348-75186d42982b"
+            },
+            "vertices": [
+              {
+                "x": 266,
+                "y": -290
+              }
+            ],
+            "labels": [
+              "Wöchentlicher Report, verschlüsselt und signiert"
+            ]
+          },
+          {
             "position": {
               "x": 410,
               "y": -174
@@ -1307,6 +1403,77 @@
               "isBidirectional": false,
               "protocol": "",
               "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 199.99999999999994,
+              "y": -240
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "SIEM - System"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "8dab72fd-55be-4301-94af-b85ffeeafcab",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "SIEM - System",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 199.99999999999994,
+              "y": -400
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Mnanagement"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "id": "d4df6162-e99c-4a6f-b348-75186d42982b",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Mnanagement",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
             }
           }
         ],

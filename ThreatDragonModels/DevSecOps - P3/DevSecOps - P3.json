@@ -20,8 +20,8 @@
         "cells": [
           {
             "position": {
-              "x": 12,
-              "y": 53
+              "x": -38,
+              "y": 18.000000000000078
             },
             "size": {
               "width": 160,
@@ -116,8 +116,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -132,8 +132,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "67b24d18-d0e0-4928-a935-b86883173d3c",
+                  "title": "Spoofing of User Identity",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attacker pretends to be a registered User , but will use his own phone number\n\nD8/R3/E3/A3/",
+                  "mitigation": "Auth with OTT and another form of Auth\nMonitoring of unusual Login Circumstances e.g. Changed Location, multiple wrong Auth Tries",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 104,
+                  "score": "17"
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1566,7 +1580,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 102
+    "threatTop": 104
   },
   "version": "2.1.1"
 }

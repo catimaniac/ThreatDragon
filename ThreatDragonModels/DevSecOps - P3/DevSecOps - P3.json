@@ -1491,8 +1491,8 @@
                 "text": "Mnanagement"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1506,9 +1506,23 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "17ca21af-4c80-44ea-989d-28fd8df266c6",
+                  "title": "Information Disclosure through malicious insider",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Malicious insider leaks Logs\nD10/R1/E10/A10",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 109,
+                  "score": "31"
+                }
+              ]
             }
           },
           {
@@ -1558,7 +1572,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 107
+    "threatTop": 109
   },
   "version": "2.1.1"
 }

@@ -940,77 +940,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "1. Auth Challenge",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "6fab69c7-ce8d-4101-bafa-8ec88c6d5f6c",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "Low",
-                  "type": "Tampering",
-                  "description": "Attacker brute forces the Credentials.\nD2/R6/E1/A5",
-                  "mitigation": "Limit Login Attempts after a certain amount of failed Login tries.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 107,
-                  "score": ""
-                }
-              ],
-              "isTrustBoundary": false
-            },
-            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Login"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
-            },
-            "target": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "vertices": [
-              {
-                "x": 237,
-                "y": 39
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Wöchentlicher Report, verschlüsselt und signiert",
               "description": "",
               "outOfScope": false,
@@ -1411,6 +1340,77 @@
               {
                 "x": 440,
                 "y": -10
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Auth Challenge",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "6fab69c7-ce8d-4101-bafa-8ec88c6d5f6c",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "Attacker brute forces the Credentials.\nD2/R6/E1/A5\n\nMITRE Attack : ID: T1110 Brute force",
+                  "mitigation": "Limit Login Attempts after a certain amount of failed Login tries.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 107,
+                  "score": "14"
+                }
+              ],
+              "isTrustBoundary": false
+            },
+            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
+            "labels": [
+              {
+                "position": 0.5,
+                "attrs": {
+                  "label": {
+                    "text": "Login"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
+            },
+            "target": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "vertices": [
+              {
+                "x": 237,
+                "y": 39
               }
             ]
           },

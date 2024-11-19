@@ -656,7 +656,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "5. OTT",
+              "name": "Telefonanbieter - OTT",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -670,14 +670,7 @@
             },
             "id": "48acb78a-9180-4346-b3ae-8f364cc7d9a5",
             "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Alternative C"
-                  }
-                }
-              }
+              "Telefonanbieter - OTT"
             ],
             "source": {
               "cell": "fd7303e8-29d2-4d76-bf7d-87eb619ede69"
